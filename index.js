@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 })
 
 // entregar uma porta
-mongoose.connect()
+mongoose.connect(process.env.MONGO_SECRET)
 
 .then(() => {
     console.log("Conectamos ao MongoDB!")
